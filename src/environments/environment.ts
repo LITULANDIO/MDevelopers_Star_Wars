@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyCEmqM7xyYRqalojd9AW1pBRdooQmr78PA",
+    authDomain: "star-wars-dutti.firebaseapp.com",
+    databaseURL: "https://star-wars-dutti.firebaseio.com",
+    projectId: "star-wars-dutti",
+    storageBucket: "star-wars-dutti.appspot.com",
+    messagingSenderId: "552116864653",
+    appId: "1:552116864653:web:bbe3ee1cdc2cde1e0844c4",
+    measurementId: "G-09QD43FSS2"
+  }
 };
 
 /*
