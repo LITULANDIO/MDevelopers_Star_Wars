@@ -1,4 +1,3 @@
-
 # Introducción
 MD Developers recibió el encargo de preparar un prototipo para mostrar un listado de naves starwars solo para usuarios registrados. El prototipo gustó mucho y fue aprobado por el comité de la empresa como proyecto para 2019.
 
@@ -31,8 +30,6 @@ Elige las tareas que creas que mejor se adaptan a tus conocimientos. Justifica p
    - Este menú debe permitir cambiar de página. Crea una página de prueba para comprobar que funcione. **5 Puntos**
 - Actualización a Angular 7: Aunque esto se realizaría en una fase 2, se ha pedido actualizar a la versión 7 de Angular.  La tarea consistirá en, manteniendo la funcionalidad, adaptar el código a Angular 7. Para esta tarea hay total libertad de empezar de 0 pero se deben mantener las funcionalidades mínimas descritas en el apartado “Requisitos mínimos”. **15 puntos**
 - Tests unitarios: Aplica test unitarios al componente starship.service y starship-list.component **5 Puntos**
-
-
 
 
 # Antes de empezar:
