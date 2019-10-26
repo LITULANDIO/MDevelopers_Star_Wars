@@ -1,17 +1,16 @@
-<!-- Toolbar -->
 <div class="toolbar" role="banner">
-    <i class="fas fa-sign-out-alt"></i>
-
     <div id="container_tool_navbar_elements">
       <div *ngIf="!isLogged">
-        <a [routerLink]="['/user/login']"> <button  type="button" id="login" class="btn btn-primary-outline" >
+        <a [routerLink]="['/login']"> <button  type="button" id="login" class="btn btn-primary-outline" >
           Login 
         </button></a></div>
-        <div *ngIf="!isLogged"><a [routerLink]="['/user/register']"><button type="button" id="register" class="btn btn-primary-outline">
+        <div *ngIf="!isLogged"><a [routerLink]="['/register']"><button type="button" id="register" class="btn btn-primary-outline">
           Register
        </button></a></div>
        <div *ngIf="isLogged"><button class="btn btn-primary-outline" (click)="onLogout()">
             Logout
         </button></div>
     </div>
-</div>
+  </div>
+
+
