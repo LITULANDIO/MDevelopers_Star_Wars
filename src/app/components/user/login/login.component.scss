@@ -5,7 +5,7 @@
     .logo{
         display: flex;
         justify-content: center;
-        padding-top: 10px;
+        margin-top: -30px;
     }
     #box{
         margin-top: 100px;
@@ -50,7 +50,6 @@
                     border-radius: 0px;
                     height: 40px;
 }               
-
                 }
                 }
         }
@@ -58,6 +57,8 @@
             text-align: center;
             color: #ffdf00; 
             cursor: pointer;
+            text-shadow: 0 0 5px #ffdf00; 
+
 
         }
         

@@ -6,9 +6,9 @@ import { PrototypeComponent } from './components/prototype/prototype.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
+  { path: '', redirectTo: '/user/login', pathMatch: 'full' },
+  { path: 'user/login', component: LoginComponent },
+  { path: 'user/register', component: RegisterComponent },
   { path: 'prototype', component: PrototypeComponent },
 
 
