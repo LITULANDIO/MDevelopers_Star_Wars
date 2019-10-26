@@ -4,7 +4,7 @@
     </div>
     <div id="box">
       <div id="login"class="container">
-      <form #formLogin= "ngForm" (submit)="onLogin()">
+      <form (submit)="onLogin()">
         <div class="dark">
           <img src="../../../../assets/img/login.png"/>
         </div>
@@ -20,7 +20,7 @@
             <div class="form-group dark ">
                 <button type="submit" class="btn btn-primary">Login</button>
             </div>
-            <a [routerLink]="['/register']"><h6>¿ You don't have an account ##?</h6></a>
+            <a [routerLink]="['/register']"><h6>¿ You don't have an account ?</h6></a>
         </form>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, ReflectiveInjector } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { map } from 'rxjs/operators';
 import { auth } from 'firebase/app';
@@ -10,7 +10,14 @@ export class AuthService {
 
   constructor(private fAuth: AngularFireAuth) { }
 
-  registerUser() {}
+  registerUser(email: string, password: string){
+    return new Promise((resolve, reject) =>{
+      this.fAuth.auth.createUserWithEmailAndPassword(email, password)
+        .then(userData => resolve(userData),
+        err => reject(err));
+    });
+
+  }
 
   loginEmailUser(email: string, password: string){
       return new Promise((resolve, reject)=>{
