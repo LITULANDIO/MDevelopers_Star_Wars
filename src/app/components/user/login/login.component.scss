@@ -2,6 +2,8 @@
     background-image: url("../../../../assets/img/fondo.png");
     width: 100%;
     height: 900px;
+    margin-top: -60px;
+}
     .logo{
         display: flex;
         justify-content: center;
@@ -58,10 +60,12 @@
             text-align: center;
             color: #ffdf00; 
             cursor: pointer;
+            text-shadow: 0 0 5px #ffdf00; 
+
 
         }
         
-        }
+        
        
 
     

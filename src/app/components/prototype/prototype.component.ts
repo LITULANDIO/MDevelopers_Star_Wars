@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../../services/api.service';
+
 
 @Component({
   selector: 'app-prototype',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrototypeComponent implements OnInit {
 
-  constructor() { }
+  starShips: any[] = [];
 
-  ngOnInit() {
-  }
+  constructor(public apiService: ApiService) {
+
+   }
+   filterLoompa = '';
+
+  ngOnInit(): void {
+   this.apiService.getShips().subscribe(
+     (data)=>{
+       this.starShips = data['results'];
+     },
+     (error)=>{
+       console.error(error);
+     }
+   );
+}
 
 }

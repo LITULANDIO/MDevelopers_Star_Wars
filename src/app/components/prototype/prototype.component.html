@@ -1,13 +1,7 @@
-<p>
-  prototype works!
-</p>
-<p>
-    prototype works!
-  </p>
-  <p>
-      prototype works!
-    </p>
-    <p>
-        prototype works!
-      </p>
-            
+<div class="container">
+  <ul *ngFor="let ship of starShips">
+    <li>{{ ship.name }}</li>
+    <li>{{ ship.model }}</li>
+    <li>{{ ship.crew }}</li>
+  </ul>
+</div>
