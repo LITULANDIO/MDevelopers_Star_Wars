@@ -14,8 +14,7 @@ export class PrototypeComponent implements OnInit {
   constructor(public apiService: ApiService) {
 
    }
-   filterLoompa = '';
-
+   
   ngOnInit(): void {
    this.apiService.getShips().subscribe(
      (data)=>{
