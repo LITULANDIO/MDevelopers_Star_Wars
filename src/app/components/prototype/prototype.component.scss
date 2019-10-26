@@ -1,0 +1,19 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+#image1, #image2{
+    position: absolute;
+}
+#margin{
+    display: flex;
+    justify-content: flex-end;
+}
+.container{
+    .align-center{
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,8 +1,39 @@
-<div class="container">
-  <ul *ngFor="let ship of starShips">
-    <li>{{ ship.name }}</li>
-    <li>{{ ship.model }}</li>
-    <li>{{ ship.crew }}</li>
-  </ul>
+<div class="logo">
+        <a [routerLink]="['/']"><img src="../../../../assets/img/logo2.png"/></a>
 </div>
+<div class="col-md-12">
+        <div class="row">
+            <div class="col-md-6">
+                <img id="image1" src="../../../assets/img/dark.png" width="40%"/>
+            </div>
+            <div id="margin" class="col-md-6">
+                    <img id="image2" src="../../../assets/img/soldier.png" width="40%"/>
+            </div>
+    </div>
+</div>
+<div class="container" *ngFor="let ship of starShips">
+<div class="row mb-3 align-center">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="row text-center ">
+                    <div class="col-md-1 mr-2">
+                        <img src="../../../assets/img/ship2.png" width="100%"/>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>{{ ship.name }}</h4>
+                        <a href="{{ ship.url }}">{{ ship.url }}</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>{{ ship.cost_in_credits }}/-</h3>
+                        <small>Price*</small>
+                        <div class="sub-row">
+                            <button type="button" class="btn btn-warning btn-sm btn-block">View details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
 
