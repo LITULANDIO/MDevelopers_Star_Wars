@@ -16,6 +16,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
+  // Registro de usuario
 onAddUser(){
   this.authService.registerUser(this.email, this.password)
     .then((res) =>{
