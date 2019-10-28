@@ -41,7 +41,6 @@ Elige las tareas que creas que mejor se adaptan a tus conocimientos. Justifica p
 
 ### Instalación
 * <pre><code> npm install </code></pre>
-* <pre><code> npm install webpack -g </code></pre>
-* <pre><code> npm install webpack-dev-server -g </code></pre>
 * Para ejecutar:
-* <pre><code> webpack-dev-server </code></pre>
+* <pre><code> ng serve </code></pre>
+
