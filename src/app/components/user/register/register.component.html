@@ -1,27 +1,39 @@
 <div id="body">
-    <app-navbar></app-navbar>
-    <div class="logo">
-        <a [routerLink]="['/']"><img src="../../../../assets/img/logo.png"/></a>
-    </div>
-    <div id="box">
-      <div id="login"class="container">
-      <form (ngSubmit)="onAddUser();">
+  <app-navbar></app-navbar>
+  <div class="logo">
+    <a [routerLink]="['/']"><img src="../../../../assets/img/logo.png"/></a>
+  </div>
+  <div id="box">
+    <div id="login" class="container">
+      <form (ngSubmit)="onAddUser()">
         <div class="dark">
-          <img src="../../../../assets/img/register.png"/>
+          <img src="../../../../assets/img/register.png" />
         </div>
-            <h3>REGISTER</h3>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input [(ngModel)]="email" type="text" id="email" class="form-control" name="email"/>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input [(ngModel)]="password" type="password" id="password" class="form-control" name="password"/>
-            </div>
-            <div class="form-group dark ">
-                <button type="submit" class="btn btn-primary">Create account</button>
-            </div>
-        </form>
-      </div>
+        <h3>REGISTER</h3>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            [(ngModel)]="email"
+            type="text"
+            id="email"
+            class="form-control"
+            name="email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            [(ngModel)]="password"
+            type="password"
+            id="password"
+            class="form-control"
+            name="password"
+          />
+        </div>
+        <div class="form-group dark ">
+          <button type="submit" class="btn btn-primary">Create account</button>
+        </div>
+      </form>
     </div>
   </div>
+</div>

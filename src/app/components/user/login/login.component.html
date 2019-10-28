@@ -1,28 +1,41 @@
 <div id="body">
-    <app-navbar></app-navbar>
-    <div class="logo">
-        <a [routerLink]="['/']"><img src="../../../../assets/img/logo.png"/></a>
-    </div>
-    <div id="box">
-      <div id="login"class="container">
+  <div class="logo">
+    <a [routerLink]="['/']"><img src="../../../../assets/img/logo.png"/></a>
+  </div>
+  <div id="box">
+    <div id="login" class="container">
       <form (submit)="onLogin()">
         <div class="dark">
-          <img src="../../../../assets/img/login.png"/>
+          <img src="../../../../assets/img/login.png" />
         </div>
-            <h3>LOGIN</h3>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input [(ngModel)]="email" type="text" id="email" class="form-control" name="email"/>
-            </div>
-            <div class="form-group">
-                <label for="pass">Password</label>
-                <input [(ngModel)]="password" type="password" id="password" class="form-control" name="password"/>
-            </div>
-            <div class="form-group dark ">
-                <button type="submit" class="btn btn-primary">Login</button>
-            </div>
-            <a [routerLink]="['/register']"><h6>¿ You don't have an account ?</h6></a>
-        </form>
-      </div>
+        <h3>LOGIN</h3>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            [(ngModel)]="email"
+            type="text"
+            id="email"
+            class="form-control"
+            name="email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="pass">Password</label>
+          <input
+            [(ngModel)]="password"
+            type="password"
+            id="password"
+            class="form-control"
+            name="password"
+          />
+        </div>
+        <div class="form-group dark ">
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+        <a [routerLink]="['/register']"
+          ><h6>¿ You don't have an account ?</h6></a
+        >
+      </form>
     </div>
   </div>
+</div>
