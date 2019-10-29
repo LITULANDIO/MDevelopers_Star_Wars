@@ -13,29 +13,29 @@ export class NavbarComponent implements OnInit {
 
   constructor(
     public authService: AuthService,
-    private afAuth: AngularFireAuth,
+    private afAuth: AngularFireAuth
   ) {}
 
   ngOnInit() {
-    //this.getCurrentUser();
+    this.getCurrentUser();
   }
+
   //Comprobar que el usuario a iniciado sesión
 
-  // getCurrentUser() {
-  //   this.authService.isAuth().subscribe(auth => {
-  //     if (auth) {
-  //       console.log("usuario SI logueado");
-  //       this.isLogged = true;
-  //     } else {
-  //       console.log("usuario NO logueado");
-  //       this.isLogged = false;
-  //     }
-  //   });
-  // } Problemas con método subscribe
+  getCurrentUser() {
+    this.afAuth.auth.onAuthStateChanged(user => {
+      if (user != null) {
+        this.isLogged = true;
+        console.log("usuario loggeado");
+      } else {
+        this.isLogged = false;
+        console.log('usuario NO loguer')
+      }
+    });
+  }
 
-  // Cerrar sesión 
+  // Cerrar sesión
   onLogout() {
-    console.log("cerrando session....");
-    this.afAuth.auth.signOut();
+    this.authService.logout();
   }
 }

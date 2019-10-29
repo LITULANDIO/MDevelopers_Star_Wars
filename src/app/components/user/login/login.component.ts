@@ -30,4 +30,9 @@ export class LoginComponent implements OnInit {
       .catch(err => console.log("err", err.message));
     this.router.navigate(["/login"]);
   }
+
+  onLogout(){
+    this.authService.signOut();
+  
+  }
 }

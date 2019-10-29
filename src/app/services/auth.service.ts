@@ -28,14 +28,13 @@ export class AuthService {
   }
 
   // Método para cerrar sesión
-  signOut() {
+  logout() {
     this.afAuth.auth.signOut();
     this.router.navigate(["/"]);
-    console.log("logout....");
   }
 
   // Método para saber si un usuario está logueado
   isAuth() {
-    this.afAuth.authState.pipe(map(auth => auth));
-  }
+    return this.afAuth;
+}
 }

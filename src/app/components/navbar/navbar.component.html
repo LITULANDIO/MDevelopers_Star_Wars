@@ -14,7 +14,7 @@
         </button></a
       >
     </div>
-    <div *ngIf="!isLogged">
+    <div *ngIf="isLogged">
       <button class="btn btn-primary-outline" title="Cerrar sesion" (click)="onLogout()">
         <i class="fas fa-sign-out-alt"></i>
       </button>

@@ -11,26 +11,26 @@ import { Starship } from "../../models/starship";
 export class PrototypeDetailComponent implements OnInit {
   constructor(public route: ActivatedRoute, public apiService: ApiService) {}
 
-  public ship: Starship = {
-    name: "",
-    model: "",
-    manufacturer: "",
-    cost_in_credits: "",
-    length: "",
-    max_atmosphering_speed: "",
-    crew: "",
-    passengers: "",
-    cargo_capacity: "",
-    consumables: "",
-    hyperdrive_rating: "",
-    MGLT: "",
-    starship_class: "",
-    pilots: [],
-    films: [],
-    created: "",
-    edited: "",
-    url: ""
-  };
+    public ship: Starship = {
+      name: "",
+      model: "",
+      manufacturer: "",
+      cost_in_credits: "",
+      length: "",
+      max_atmosphering_speed: "",
+      crew: "",
+      passengers: "",
+      cargo_capacity: "",
+      consumables: "",
+      hyperdrive_rating: "",
+      MGLT: "",
+      starship_class: "",
+      pilots: [],
+      films: [],
+      created: "",
+      edited: "",
+      url: ""
+    };
 
   ngOnInit() {
     const ship_id = this.route.snapshot.params["id"];

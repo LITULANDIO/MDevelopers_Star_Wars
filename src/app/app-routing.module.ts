@@ -3,18 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './components/user/login/login.component';
 import { RegisterComponent } from './components/user/register/register.component';
 import { PrototypeComponent } from './components/prototype/prototype.component';
-
+import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'prototype', component: PrototypeComponent },
+  { path: 'prototype', component: PrototypeComponent, canActivate: [AuthGuard]  },
   { path: 'prototype-detail/:id', component: PrototypeComponent },
-
-
-
-
 ];
 
 @NgModule({
